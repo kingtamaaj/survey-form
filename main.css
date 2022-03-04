@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body::before { 
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  background-image: linear-gradient(rgba(38, 114, 216, 0.43), rgba(69, 133, 222, 1)), url("https://cdn.shrm.org/image/upload/c_crop%2ch_704%2cw_1253%2cx_0%2cy_129/c_fit%2cf_auto%2cq_auto%2cw_767/v1/Competencies/black_men_in_tech_gfstwu?databtoa=eyIxNng5Ijp7IngiOjAsInkiOjEyOSwieDIiOjEyNTMsInkyIjo4MzMsInciOjEyNTMsImgiOjcwNH19"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
+}
+
+body{
+  color: white;
+}
+
+
+header {
+  position: absolute;
+  top: 10px; 
+  margin-left: 25%;
+}
+/* 
+=========
+form
+=========
+*/
+form {
+  background-color: rgba(6, 40, 88, 0.6);
+  margin: 150px 125px 0;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  border-radius: 4px;
+  line-height: 1.7;
+ }
+
+input {
+  box-sizing: border-box;
+  width: 95%;
+  border-radius: 4px;
+  border: none;
+  padding: 15px 10px;
+  
+}
+
+input[type=radio] {
+  width: 2%;
+  transform: scale(1.5);
+  
+}
+
+input[type=checkbox] {
+  width: 2%;
+}
+
+#dropdown {
+  width: 95%;
+  border-radius: 4px;
+  border: none;
+  padding: 5px 10px;
+  color: gray;
+}
+
+button {
+  width: 95%;
+}
+
+textarea {
+  width: 95%;
+}
+
+label {
+  line-height: 250%;
+}
+
+/* 
+=============
+media queries
+=============
+*/
+@media only screen and (max-width: 700px) {
+
+body {
+box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  margin-left: 20%;
+  top: 2em; 
+  line-height: .7;
+  font-size: .8rem;
+ }
+
+form {
+  background-color: rgba(6, 40, 88, 0.6);
+  width: 70%;
+  margin: 120px 90px 0px;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  border-radius: 4px;
+  line-height: 1.7;
+ }
+
+}
+
+@media only screen and (max-width: 400px) {
+
+body {
+box-sizing: border-box;
+
+}
+
+header {
+  position: absolute;
+  width: 90%;
+  margin: 0 30px;
+  font-size: .8rem;
+  line-height: 1;
+ }    
+
+form {
+  background-color: rgba(6, 40, 88, 0.6);
+  width: 90%;
+  margin: 135px 20px 0;
+  padding: 10px 10px 50px 20px;
+  border-radius: 4px;
+  line-height: 1.7;
+ }
+
+}
+
